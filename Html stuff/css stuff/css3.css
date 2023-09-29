@@ -14,14 +14,15 @@ h2
 {
     background-repeat:no-repeat;
     background-image: url(paint.png);
-    background-size: auto;
+    background-position: center;
+    background-color: purple;
 }
 
 .two
 {
     background-repeat: repeat;
     background-image: url(paint.png);
-    background-size: auto;
+    background-color: purple;
 }
 
 .three
@@ -29,6 +30,8 @@ h2
     background-repeat:no-repeat;
     background-image: url(paint.png);
     background-size: contain;
+    background-color: purple;
+    background-position: center;
 }
 
 .four
@@ -36,6 +39,8 @@ h2
     background-repeat: repeat-x;
     background-image: url(paint.png);
     background-size: cover;
+    background-color: purple;
+    background-position: center;
 }
 
 h3
