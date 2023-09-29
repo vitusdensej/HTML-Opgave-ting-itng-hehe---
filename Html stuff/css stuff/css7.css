@@ -1,0 +1,105 @@
+body
+{
+    margin: 0;
+    background-color: hsl(194, 100%, 31%);
+}
+
+.container
+{
+    max-width: 1000px;
+    padding: 1.5rem;
+    color: #ddd;
+}
+
+.container li
+{
+    display: inline-block;
+    max-width: 1000px;
+    padding: 1.5rem;
+}
+
+.answer
+{
+    color: green;
+}
+
+a
+{
+    color:hsl(194, 100%, 70%)
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, tr, th, td
+{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+table
+{
+    width:50%;
+}
+
+.male
+{
+    background-color: #bbb;
+    color:black;
+}
+
+.female
+{
+    background-color: #ccc;
+    color:black;
+}
+
+.t2 .male
+{
+    display:none;
+}
+
+.bt2 .male
+{
+    display: none;
+}
+
+.bt1
+{
+    border-radius: 5px;
+    border: 1px solid white;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.btable th
+{
+    background-color: darkred;
+
+}
+
+.bmale
+{
+    background-color:pink;
+    color:aqua;
+}
+
+.bfemale
+{
+    background-color:red;
+    color:wheat;
+}
+
+.btable li:hover
+{
+    background-color: aquamarine;
+}
+
+.minesejesvar
+{
+    color: white;
+}

@@ -1,0 +1,57 @@
+body
+{
+    background-color: crimson;
+    background-image: url(original_026fc0b61e323aff95685b0331d518da.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+p, h1, h2, h3, h4, h5, h6
+{
+    color: white;
+}
+
+#legoimg
+{
+    width: 50%;
+    margin-top: 10px;
+}
+
+.prilego
+{
+    border: 2px solid darksalmon;
+    background-color: darksalmon;
+}
+
+.leggodt
+{
+    display:inline;
+    float:left;
+    max-width: 45%;
+    margin: 10px;
+    border: 2px solid lightcoral;
+    background-color: lightcoral;
+    border-radius: 5px;
+
+}
+
+.legopatent
+{
+    display:inline;
+    float: right;
+    border: 2px solid salmon;
+    background-color: salmon;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.kasseformede
+{
+    border: 2px solid coral;
+    background-color: coral;
+    margin: 10px;
+    margin-left: 47%;
+    border-radius: 5px;
+
+}

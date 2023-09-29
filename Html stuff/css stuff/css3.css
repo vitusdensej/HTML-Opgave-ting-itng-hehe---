@@ -1,0 +1,51 @@
+body
+{
+    background-image: url(download\ \(1\).jpg);
+    background-size: 100% 100%;
+    background-repeat:repeat-y;
+}
+
+h2
+{
+    color: white;
+}
+
+.one
+{
+    background-repeat:no-repeat;
+    background-image: url(paint.png);
+    background-size: auto;
+}
+
+.two
+{
+    background-repeat: repeat;
+    background-image: url(paint.png);
+    background-size: auto;
+}
+
+.three
+{
+    background-repeat:no-repeat;
+    background-image: url(paint.png);
+    background-size: contain;
+}
+
+.four
+{
+    background-repeat: repeat-x;
+    background-image: url(paint.png);
+    background-size: cover;
+}
+
+h3
+{
+    color:white;
+    background-color: darkgreen;
+}
+
+.box
+{
+    background-image: url(Apple_red_delicius_stalk.jpg);
+    background-repeat:round;
+}

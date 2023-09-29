@@ -1,0 +1,29 @@
+*
+{
+    font-family:"comic sans MS";
+}
+
+table
+{
+    border: 1px solid black;
+}
+
+td
+{
+    border: 1px solid black;
+}
+
+.cyan-text
+{
+    color:darkseagreen;
+}
+
+.gray-text
+{
+    color: gray;
+}
+
+#oversigt-text
+{
+    text-align:center;
+}

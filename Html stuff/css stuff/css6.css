@@ -1,0 +1,52 @@
+table, td, tr
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.borderY
+{
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+
+.borderX
+{
+    border-left: 5px solid purple;
+    border-right: 5px solid purple;
+}
+
+.padding
+{
+    padding: 10px 20px 10px 20px
+}
+
+.margin
+{
+    margin: 20px 30px 10px 5px;
+}
+
+img
+{
+
+}
+
+.img
+{
+    padding: 10px;
+    border: 5px solid purple;
+    margin: 20px 40px 50px 40px;
+}
+
+.gimg
+{
+    width: 187px;
+    height: 277;
+}
+
+.galleri
+{
+    border: 5px dotted purple;
+    width:fit-content;
+    padding: 12px;
+}

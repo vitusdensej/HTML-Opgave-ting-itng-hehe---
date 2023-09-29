@@ -1,0 +1,19 @@
+*
+{
+    font-family: "Comic Sans MS";
+}
+
+.roundborder
+{
+    border: 2px solid lightgreen;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
+
+nav
+{
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: lightgreen;
+    width: fit-content;
+}

@@ -1,0 +1,91 @@
+body
+{
+    background-color: aquamarine;
+}
+
+.legostore
+{
+    float:left;
+    max-width: 33%;
+    padding-left: 5px;
+}
+
+.legostore *
+{
+
+}
+
+.legomind img
+{
+    display: inline;
+    float:left;
+    margin-right: 20px;
+}
+
+#mhardwaretext
+{
+
+}
+
+.legomind
+{
+    overflow: hidden;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.listertingting
+{
+    margin-bottom: 40px;
+}
+
+#førsteliste
+{
+    border: 3px dotted blue;
+    border-radius: 10px;
+    background-color: lightblue;
+    padding-left: 10px;
+}
+
+#andenliste
+{
+    margin-top: 10px;
+    border: 3px dotted blue;
+    border-radius: 10px;
+    background-color: lightblue;
+    padding-left: 10px;
+}
+
+#produk
+{
+    border: 2px dashed rgb(255, 214, 0);
+    background-color: rgb(255, 160, 0);
+    padding-left: 10px;
+    border-radius: 5px;
+    overflow-x: scroll;
+}
+
+#produk table
+{
+    width: 400px;
+}
+
+#produk img
+{
+    width: 800px;
+}
+
+#opro
+{
+
+}
+
+#tpro
+{
+    
+}
+
+#thpro
+{
+    
+}

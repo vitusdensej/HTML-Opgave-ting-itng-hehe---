@@ -1,0 +1,66 @@
+body
+{
+    background-image: url(css9imgs/img/Zig-Zag.svg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container
+{
+    max-width: 1000px;
+}
+
+article, .layout
+{
+    border-top: 5px solid brown;
+    border-bottom: 5px solid brown;
+}
+
+article img
+{
+    float: right;
+    width: 50%;
+}
+
+article
+{
+    background-color: #eee;
+    overflow: hidden;
+}
+
+article h2
+{
+    text-align: center;
+}
+
+header
+{
+    background-color: #2a9d8f;
+    height: 75px;
+    text-align: left;
+    clear:both
+}
+
+aside
+{
+    background-color: #e9c46a;
+    float: left;
+    text-align: left;
+    width: 10%;
+    height: 200px;
+}
+
+main
+{
+    background-color: #f4a261;
+    text-align: left;
+    height: 200px;
+    float: right;
+    width: 90%;
+}
+
+footer
+{
+    background-color: #e76f51;
+    text-align: left;
+    clear:both;
+}

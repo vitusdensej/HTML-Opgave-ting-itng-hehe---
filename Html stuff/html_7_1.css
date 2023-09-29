@@ -1,0 +1,13 @@
+table
+{
+    width: 500px;
+}
+
+table, tr, td, th
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    background-image: url(Skærmbillede\ 2023-09-15\ 115106.png);
+    background-repeat: no-repeat;
+}
