@@ -7,6 +7,8 @@ body
 .container
 {
     max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 article, .layout
@@ -19,6 +21,12 @@ article img
 {
     float: right;
     width: 50%;
+}
+
+.layout
+{
+    text-align: center;
+    background-color: #eee;
 }
 
 article
@@ -63,4 +71,5 @@ footer
     background-color: #e76f51;
     text-align: left;
     clear:both;
+    height: 50px;
 }
