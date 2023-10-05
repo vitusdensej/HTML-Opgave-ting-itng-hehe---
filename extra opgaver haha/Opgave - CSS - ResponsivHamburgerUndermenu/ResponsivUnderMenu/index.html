@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"> 
+    <title>Responsiv menu</title>
+</head>
+<body>
+    <nav>
+        <!-- Checkbox til at lave "checkbox tricket" -->
+        <input class="menu-btn" type="checkbox">
+        <!-- Hamburger menu ikon -->
+        <img src="img/bars-solid.svg" alt="hamburger menu icon" class="menuicon">
+        <!-- Luk hamburger menu ikon -->
+		<img src="img/times-solid.svg" alt="hamburger close icon" class="closeicon">
+        <ul>
+            <li>
+                <!-- Alle links er tomme links, dvs de fører ingen steder hen, når man klikker på dem, men de opfører sig som almindelige links. Et tomt link oprettes ved at skrive "#" i href-attributten. I denne udgave er alle links i øverste niveau lavet som h2'ere i stedet for at være links (<a>) -->
+                <h2>menupunkt 1</h2>
+                <!-- Checkbox til at lave "checkbox tricket" på undermenuen -->
+				<input class="submenu-btn" type="checkbox">
+                <!-- Pil ned ikon, som viser at menuen indeholder en undermenu -->
+                <img src="img/caret-down-solid.svg">
+                <ul>
+                    <li>
+                        <a href="#">undermenupunkt 1</a>
+                    </li>
+                    <li>
+                        <a href="#">undermenupunkt 2</a>
+                    </li>
+                    <li>
+                        <a href="#">undermenupunkt 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>menupunkt 2</h2>
+                <input class="submenu-btn" type="checkbox">
+                <img src="img/caret-down-solid.svg">
+                <ul>
+                    <li>
+                        <a href="#">undermenupunkt 1</a>
+                    </li>
+                    <li>
+                        <a href="#">undermenupunkt 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>menupunkt 3</h2>
+                <input class="submenu-btn" type="checkbox">
+                <img src="img/caret-down-solid.svg">
+                <ul>
+                    <li>
+                        <a href="#">undermenupunkt 1</a>
+                    </li>
+                    <li>
+                        <a href="#">undermenupunkt 2</a>
+                    </li>
+                    <li>
+                        <a href="#">undermenupunkt 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <h1>Testside 2</h1>
+        </div>
+        <section>
+            <article>
+                <p>På denne side skal du lave en responsiv menu med en undermenu.</p>
+                <img src="img/Image2.jpg" alt="arbejdsbillede">
+                <p>Ligesom til den forrige opgave er den grundlæggende kode og styling lavet til dig. Al styling til menuen i desktopversionen er også lavet færdig. Det er den styling, der slår igennem i media query'en @media only screen and (min-width: 768px). Du skal lave mobil menuen.</p>
+                <p>I menuen er der nu tilføjet undermenupunkter til de tre menupunkter.</p>
+                <p>Vær opmærksom på, at de menupunkterne i de øverste menupunkter her er ændret til h2'ere.</p>
+                <h2>"Checkbox tricket" kan også bruges til undermenuer</h2>
+                <p>I denne mobilmenu med undermenuer anvendes et pil ned ikon, som skal placeres bag en skjult checkbox på samme måde, som den dit hamburger ikon også blev placeret bag en skjult checkbox i den første opgave.</p>
+                <p>Både billedet af pilen og checkboxen er lagt ind i din menu i HTML-koden. Du skal i denne opgave selv placere både billedet af pilen og checkboxen i din mobilmenu. Pil og checkbox skal placeres efter menupunktet, så der kommer til at stå MENUPUNKT 1 &#x25BC;</p>
+                <p>Ligesom i den første opgave, kan du også bruge CSS pseudo-selectoren :checked til styling af undermenuen, når den bliver åbnet.</p>
+                <p>Så hvis du styler på nav .menu-btn:checked ~ul li .submenu-btn:checked ~ul, så styler du på den undermenu, som skal åbnes, når man klikker på pil ned ikonet.</p>
+                <p>Når du åbner siden i din browser, så tjek sidens responsivitet ved at trække vinduet bredere og smallere. På siden her er der sat et responsivt breakpoint ved 768px. Pas på med at bruge den responsive visning, som findes i "inspicer"/"udviklerværktøjet" - de kan godt give en forkert visning.</p>
+                <p>Hvis du har brug for mere hjælp til at løse opgaven, så spørg Hanne!</p>
+            </article>
+        </section>
+
+        <!-- Pil som kan føre brugeren til toppen af siden -->
+        <span><a href="#top"><img src="img/caret-down-solid.svg"></a></span>
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"> 
+    <title>Responsiv menu</title>
+</head>
+<body>
+    <nav>
+        <!-- Checkbox til at lave "checkbox tricket" - se forklaring i teksten nedenfor -->
+        <input class="menu-btn" type="checkbox">
+        <!-- Hamburger menu ikon -->
+        <img src="img/bars-solid.svg" alt="hamburger menu icon" class="menuicon">
+        <!-- Luk hamburger menu ikon -->
+		<img src="img/times-solid.svg" alt="hamburger close icon" class="closeicon">
+        <ul>
+            <li>
+                <!-- Alle links er tomme links, dvs de fører ingen steder hen, når man klikker på dem, men de opfører sig som almindelige links. Et tomt link oprettes ved at skrive "#" i href-attributten -->
+                <a href="#">menupunkt 1</a>
+            </li>
+            <li>
+                <a href="#">menupunkt 2</a>
+            </li>
+            <li>
+                <a href="#">menupunkt 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Testside</h1>
+        <section>
+            <article>
+                <p>På denne side skal du lave en responsiv menu i et niveau.</p>
+                <img src="img/Image1.jpg" alt="arbejdsbillede">
+                <p>Det grundlæggende indhold på siden er lavet for dig. Det samme gælder den grundlæggende styling.</p>
+                <p>Vær opmærksom på, at menulinjen i desktop-versionen er lavet som en vandret flexbox. Den skal i mobil menuen laves om til en lodret flexbox.</p>
+                <p>Desktop menuen er allerede lavet færdig for dig. Det er den styling, der slår igennem i media query'en @media only screen and (min-width: 768px). Du skal lave mobil menuen.</p>
+                <p>Derudover er der anvendt nogle få klasser til hamburger menu ikonerne.</p>
+                <h2>"Checkbox tricket" til mobilmenuer</h2>
+                <p>Hamburger menuen er baseret på et lille trick, som kaldes "checkbox tricket". Det laves ved at sætte en gennemsigtig checkbox foran hamburger menu ikonet (og lukke-ikonet), så i stedet for at klikke på de to ikoner, så klikker man i virkeligheden i en checkbox (afkrydsningsboks) og enten sætter eller fjerner et kryds i den. Checkboxen er gjort usynlig og ligger henover ikonerne til at åbne og lukke menuen, så brugeren får aldrig checkboxen at se (eller de krydser, som han/hun sætter, når menuen bliver åbnet og lukket).</p>
+                <p>Det smarte ved det trick er, at man kan teste på, om brugeren har sat kryds i eller fjernet krydset i checkbox'en vha CSS.</p>
+                <p>CSS pseudo-selectoren :checked kan bruges til den styling, som skal slå igennem, når brugeren har klikket på checkboxen (hamburger menu ikonet).</p>
+                <p>Så hvis du styler på nav .menu-btn:checked ~ul, så styler du på den ul, som kommer i samme niveau som din checkbox (~ tegnet betyder, at den er søskende til din checkbox). Ul'en i samme niveau som din checkbox er din menu. Styling på .menu-btn:checked ~ul slår kun igennem, hvis brugeren har klikket på checkboxen og "sat kryds i den", selvom brugeren aldrig kommer til at se det kryds.</p>
+                <p>Når du åbner siden i din browser, så tjek sidens responsivitet ved at trække vinduet bredere og smallere. På siden her er der sat et responsivt breakpoint ved 768px. Pas på med at bruge den responsive visning, som findes i "inspicer"/"udviklerværktøjet" - de kan godt give en forkert visning.</p>
+                <p>Hvis du har brug for mere hjælp til at løse opgaven, så spørg Hanne!</p>
+            </article>
+        </section>
+
+    </main>
+    
+</body>
+</html>

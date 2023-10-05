@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    color: hsl(209, 10%, 100%);
+}
+
+header
+{
+    background-color: hsl(209, 50%, 30%);
+}
+
+nav
+{
+    background-color: hsl(209, 30%, 60%);
+}
+
+main
+{
+    background-color: hsl(209, 20%, 80%);
+}
+
+aside
+{
+    background-color: hsl(209, 80%, 50%);
+}
+
+footer
+{
+    background-color: hsl(209, 50%, 30%);
+}

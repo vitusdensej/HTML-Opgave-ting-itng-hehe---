@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+h2
+{
+    text-align: center;
+}
+
+body
+{
+    color: hsl(20, 10%, 100%);
+    display: grid;
+}
+
+section
+{
+    margin: 0 2rem;
+}
+
+article
+{
+    margin: 2rem 0;
+}
+
+.sizethingthing
+{
+    height: 80px;
+}
+
+header
+{
+    background-color: hsl(20, 50%, 30%);
+}
+
+body > div
+{
+    background-color: hsl(20, 30%, 40%);
+}
+
+aside
+{
+    background-color: hsl(20, 80%, 50%);
+}
+
+nav
+{
+    background-color: hsl(20, 30%, 60%);
+}
+
+main
+{
+    background-color: hsl(20, 20%, 80%);
+    
+}
+
+footer
+{
+    background-color: hsl(20, 50%, 30%);
+}
+
+@media only screen and (min-width:1000px)
+{
+
+}

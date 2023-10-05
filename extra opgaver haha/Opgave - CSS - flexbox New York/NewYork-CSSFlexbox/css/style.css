@@ -1,0 +1,90 @@
+/* Root CSS reset of margin/padding */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Main styling */
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(171, 44%, 95%);
+    color: hsl(171, 40%, 11%);
+}
+
+/* Header styling */
+
+header
+{
+    height: 100px;
+    background-color: hsl(171, 44%, 31%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1
+{
+    color: hsl(171, 44%, 85%);
+}
+
+/* Nav/footer styling */
+
+nav, footer
+{
+    background-color: hsl(171, 40%, 11%);
+    height: 40px;
+    color: hsl(171, 44%, 95%);
+    line-height: 40px;    
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul
+{
+    display: flex;
+
+}
+
+nav ul li a
+{
+    
+    border-right: 2px solid hsl(171, 44%, 95%);
+    color: inherit;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+nav img
+{
+    height: 40px;
+}
+
+/* Content area styling */
+
+main
+{
+    margin: 50px 30px;
+}
+
+h2, p
+{
+    margin-bottom: 20px;
+}
+
+footer p
+{
+    margin-bottom: 0;
+    display:flex;
+    justify-content: center;
+}

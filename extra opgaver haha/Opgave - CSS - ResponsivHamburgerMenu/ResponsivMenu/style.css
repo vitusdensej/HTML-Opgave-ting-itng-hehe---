@@ -1,0 +1,131 @@
+/* Styling til mobiludgave */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;   
+}
+
+main
+{
+    margin: 0.5rem;
+}
+
+main section article img
+{
+    width: 100%;
+}
+
+h1, p
+{
+    margin: 2rem 0;
+}
+
+nav
+{
+    height: 50px;
+    background-color: hsl(0, 0%, 50%);
+}
+
+nav ul
+{
+    display: none; /* I mobilvisning skal menuen ikke vises, før brugeren har klikket på hamburger menu ikonet */
+    width: 100%;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+nav ul li:hover
+{
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* Fælles styling for checkbox og menuikoner */
+nav .menu-btn, nav>img
+{
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+/* Separat styling for checkbox */
+nav .menu-btn
+{
+    display: block;
+    width: 40px;
+    z-index: 7;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Separat styling for menuikoner */
+nav>img
+{
+    z-index: 6;
+}
+
+nav .menu-btn ~ .menuicon
+{
+    display: block;
+}
+
+nav .menu-btn ~ .closeicon
+{
+    display: none;
+}
+
+/* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
+
+@media only screen and (min-width: 768px)
+{
+    nav
+    {
+        line-height: 50px;
+    }
+
+    nav .menu-btn ~ .menuicon
+    {
+        display: none;
+    }
+
+    nav input.menu-btn
+    {
+        display: none;
+    }
+
+    nav ul
+    {
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;   
+    }
+
+    nav ul li
+    {
+        padding: 0;
+    }
+
+    nav ul li a
+    {
+        color: gainsboro;
+    }
+
+    nav ul li:hover a
+    {
+        color: darkslategray;
+    }
+}
+

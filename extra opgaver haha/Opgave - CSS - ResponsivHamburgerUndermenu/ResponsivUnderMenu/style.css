@@ -1,0 +1,221 @@
+/* Styling til mobiludgave. Denne slår også igennem på desktop med mindre den er ændret i media queryen (@media only screen and (min-width: 768px)) */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;   
+}
+
+main section
+{
+    margin: 0.5rem;
+}
+
+main section article img
+{
+    width: 100%;
+}
+
+h1
+{
+    height: 100px;
+    background-color: darkslategray;
+    color: whitesmoke;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-shadow: -2px -2px silver;
+}
+
+p
+{
+    margin: 2rem 0;
+}
+
+nav
+{
+    height: 50px;
+    background-color: hsl(0, 0%, 50%);
+    line-height: 50px;
+}
+
+nav ul
+{
+    display: none; /* I mobilvisning skal menuen ikke vises, før brugeren har klikket på hamburger menu ikonet */
+    width: 100%;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+nav ul li h2
+{
+    color: gainsboro;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 2rem;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* Fælles styling for checkbox og menuikoner */
+nav .menu-btn, nav>img
+{
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+/* Separat styling for checkbox */
+nav .menu-btn
+{
+    display: block;
+    width: 40px;
+    z-index: 7;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Separat styling for menuikoner */
+nav>img
+{
+    z-index: 6;
+}
+
+/* Hamburger menu ikonen vises som default */
+nav .menu-btn ~ .menuicon
+{
+    display: block;
+}
+
+/* Lukke ikonet til menuen skjules som default */
+nav .menu-btn ~ .closeicon
+{
+    display: none;
+}
+
+/* Pil nederst i højre hjørne, som altid kan føre brugeren til toppen. Dette styler den hvide cirkel bag pilen */
+main>span
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+/* Styling af selve til-top pil billedet */
+main>span img
+{
+    width: 30px;
+}
+
+/* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
+@media only screen and (min-width: 768px)
+{
+    h1
+    {
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+
+    /* Checkbox og hamburger menu ikon vises ikke på desktop */
+    nav .menu-btn ~ .menuicon, nav .menu-btn
+    {
+        display: none;
+    }
+
+    nav ul
+    {
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;   
+    }
+
+    nav ul li
+    {
+        padding: 0;
+    }
+
+    nav ul li:hover
+    {
+        background-color: hsla(0, 0%, 20%);
+    }
+
+    nav ul li:hover h2
+    {
+        background-color: hsla(0, 0%, 20%);
+    }
+
+    nav ul li a
+    {
+        color: gainsboro;
+    }
+
+    /* Checkbox og pil ned ikon skal ikke vises i desktop visning */
+    nav ul li img, nav ul li input
+    {
+        display: none;
+    }
+
+    /* Styling af dropdown menu. Den skal ikke vises (display: none), før man hover over det overliggende menupunkt */
+    nav ul li ul
+    {
+        display: none;
+        position: absolute;
+        background-color: hsl(0, 0%, 80%);
+        text-transform: none;
+        width: 235px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* Når brugeren hover over det overliggende menupunkt, skal dropdown menuen vises */
+    nav ul li:hover ul
+    {
+        display: block;
+    }
+
+    nav ul li:hover a
+    {
+        color: darkslategray;
+    }
+
+    nav ul li ul li
+    {
+        display: block;
+        padding: 0 1rem;
+    }
+
+    nav ul li ul li:hover
+    {
+        background-color: hsla(0, 0%, 20%, 0.6);
+    }
+
+    nav ul li ul li:hover a
+    {
+        color: gainsboro;
+    }
+
+    
+
+}
+
