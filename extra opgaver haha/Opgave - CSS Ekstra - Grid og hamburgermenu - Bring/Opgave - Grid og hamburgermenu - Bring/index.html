@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bring Grid og Hamburgermenu</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
     <header>
         <img src="img/logo.svg" alt="bring logo">
         <form method="post">
-            <input type="search" name="track" placeholder="Indtast track and trace">
+            <input type="search" name="track" placeholder="Indtast track and trace" id="search">
             <input type="image" class="search" value="submit" src="img/baseline-search-24px.svg">
         </form>
         <nav>
@@ -30,15 +31,16 @@
     </header>
 
     <main>
-        <section>
+        <section id="firstimg">
             <img src="img/hero-04.jpg" alt="bring transport">
             <article>
                 <h1>Din vej gennem Norden</h1>
                 <p>Komplette løsninger til transport af gods, pakker og post</p>
             </article>
         </section>
-        <section>
+        <section id="tjenester">
             <h2>Tjenester</h2>
+            <div class="flexbreak"></div>
             <article class="services">
                 <div class="service-item">
                     <img src="img/shopping-cart.png" alt="bring e-handel e-commerce">
@@ -53,6 +55,8 @@
                     <img src="img/parcel-illustration.png" alt="pakker levering post">
                     <h3>Pakker</h3>
                 </div>
+
+                <div class="flexbreak"></div>
 
                 <div class="service-item">
                     <img src="img/cargo-illustration.png" alt="gods levering transport">
@@ -71,8 +75,10 @@
             </article>
         </section>        
 
-        <section>
+        <section id="ombring" class="alittlebitofmargin">
                 <h2>Om Bring</h2>
+
+                <div class="flexbreak"></div>
 
                 <img src="img/smiley.png" alt="smiley happy customers glade kunder">
 
@@ -90,10 +96,10 @@
                     </div>
                 </article>
 
-                <a href="#" class="readmore">Læs mere</a>
+                <a href="#" class="readmore læsmerebutton">Læs mere</a>
             
         </section>
-        <section>
+        <section class="sammeting alittlebitofmargin">
             <article>
                 <h2>E-handel</h2>
 
@@ -101,10 +107,10 @@
 
                 <h3>Læs flere dybdegående artikler om e-handel, læs vores e-handelsrapport eller se videoklip fra vores seminarer.</h3>
 
-                <a href="#" class="readmore">Læs mere</a>
+                <a href="#" class="readmore læsmerebutton">Læs mere</a>
             </article>
         </section>
-        <section>
+        <section class="sammeting alittlebitofmargin" id="butdiff">
             <article>
                 <h2>Modtagerservice</h2>
 
@@ -112,15 +118,15 @@
 
                 <h3>Her kan du som er modtager af en pakke, der er sendt med Bring, få svar på de oftest stillede spørgsmål og se vores telefonnumre samt e-mailadresser.</h3>
 
-                <a href="#" class="readmore">Læs mere</a>
+                <a href="#" class="readmore læsmerebutton">Læs mere</a>
             </article>
         </section>
-        <section>
+        <section id="kundeservice" class="alittlebitofmargin½">
             <h2 class="absolute">Kundeservice</h2>
             
             <article class="columns">
                 
-                <div class="column">
+                <div class="column" id="tingting">
                     <p>I vores kundeservice finder du svar på de oftest stillede spørgsmål, telefonnumre og email samt adresserne til vores kontorer og terminaler.</p>
                     <ul>
                         <li>Pakker: 70 28 60 70</li>
@@ -130,14 +136,14 @@
                     </ul>
                 </div>
 
-                <div class="column">
+                <div class="column" id="othertingting">
                     <img src="img/bring-map-nordic.png" alt="nordic map headquarters">
                 </div>
             </article>
 
-            <a href="#" class="readmore">Læs mere</a>
+            <a href="#" class="readmore læsmerebutton">Læs mere</a>
         </section>
-        <section>
+        <section id="nejtak">
             <img src="img/budbil-02.jpg" alt="bring budbil">
             <article>
                 <h2>Vil du være en af os?</h2>
@@ -150,6 +156,8 @@
     </main>
     <footer>
             <h2>Kontakt os</h2>
+
+            <div class="flexbreak"></div>   
 
             <article class="columns">
                 <div class="column">

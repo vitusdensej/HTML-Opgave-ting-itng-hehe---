@@ -6,13 +6,11 @@
 
 h2
 {
-    text-align: center;
 }
 
 body
 {
     color: hsl(20, 10%, 100%);
-    display: grid;
 }
 
 section
@@ -28,11 +26,19 @@ article
 .sizethingthing
 {
     height: 80px;
+    /*height:100%;*/
 }
 
 header
 {
     background-color: hsl(20, 50%, 30%);
+    grid-area: header;
+}
+
+.centerstuff
+{
+    display:grid;
+    place-items: center;
 }
 
 body > div
@@ -43,25 +49,103 @@ body > div
 aside
 {
     background-color: hsl(20, 80%, 50%);
+    display: none;
 }
 
 nav
 {
     background-color: hsl(20, 30%, 60%);
+    grid-area: nav;
+}
+
+#menu1
+{
+    grid-area: menu1;
+
+}
+
+#menu2
+{
+    grid-area: menu2;
 }
 
 main
 {
     background-color: hsl(20, 20%, 80%);
-    
+    grid-area: main;
 }
 
 footer
 {
     background-color: hsl(20, 50%, 30%);
+    grid-area: footer;
+}
+
+#side1
+{
+    grid-area: side1;
+    display:none;
+}
+
+#side2
+{
+    grid-area: side2;
+    display:none;
+}
+
+.grid
+{
+    display: grid;
+    height:100vh;
+    align-content: stretch;
+    grid-template-areas: 
+        "header"
+        "menu1"
+        "main"
+        "menu2"
+        "footer";
 }
 
 @media only screen and (min-width:1000px)
 {
+    aside
+    {
+        display:initial;
+    }
 
+    #side1
+    {
+        display:grid;
+    }
+
+    #side2
+    {
+        display:grid;
+    }
+
+    .sizethingthing
+    {
+        height:100%;
+    }
+
+    .grid
+    {
+        grid-template-areas: 
+            "header header header header header header"
+            "header header header header header header"
+            "header header header header header header"
+            "menu1 menu1 menu1 menu1 menu2 menu2"
+            "side1 main main main side2 side2"
+            "side1 main main main side2 side2"
+            "side1 main main main side2 side2"
+            "side1 main main main side2 side2"
+            "side1 main main main side2 side2"
+            "side1 main main main side2 side2"
+            "side1 main main main side2 side2"
+            "side1 main main main side2 side2"
+            "side1 main main main side2 side2"
+            "footer footer footer footer footer footer"
+            "footer footer footer footer footer footer"
+            "footer footer footer footer footer footer";
+    }
 }

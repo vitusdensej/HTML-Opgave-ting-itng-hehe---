@@ -1,0 +1,273 @@
+*
+{
+    /*max-width:100vw;*/
+    /*overflow-x: hidden;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header img
+{
+
+}
+
+.menuicon
+{
+    display: none;
+}
+
+.closeicon
+{
+    display:none;
+}
+
+nav
+{
+    display:flex;
+}
+
+nav ul
+{
+    display:none;
+}
+
+.menuopener
+{
+    display: none;
+}
+
+header
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+form
+{
+    display:flex;
+    width: 50%;
+    
+}
+
+#search
+{
+    width:100%;
+}
+
+#firstimg article
+{
+    color:white;
+    text-align: center;
+}
+
+#firstimg h1
+{
+    font-size:xx-large;
+    margin-top: 0;
+}
+
+#firstimg
+{
+    width: 100%;
+
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+
+    height:496px;
+}
+
+#firstimg img
+{
+    
+    width: 100%;
+}
+
+#tjenester
+{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#tjenester h2
+{
+
+}
+
+.services
+{
+    display:flex;
+    flex-wrap: wrap;
+    /*width:calc(240px * 3);*/
+    justify-content: center;
+}
+
+.service-item
+{
+    
+}
+
+.flexbreak
+{
+    width:100%;
+}
+
+#ombring
+{
+    background-color: #edcc35;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 25px solid #edcc35;
+}
+
+.columns
+{
+    display:flex;
+}
+
+.columns p
+{
+
+}
+
+.column
+{
+    position: relative;
+    
+}
+
+.læsmerebutton
+{
+    background-color: #333333;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    border: 5px solid #333333;
+    border-width: 15px;
+    text-decoration: none;
+}
+
+#kundeservice
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sammeting article
+{
+    background-color: #7ac144;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#butdiff article
+{
+    background-color: white;
+}
+
+#kundeservice
+{
+    background-color: #edcc35;
+    border: 25px solid #edcc35;
+    border-right-width: 0;
+}
+
+#kundeservice img
+{
+}
+
+#tingting
+{
+    left:75px;
+}
+
+#othertingting
+{
+    /*float: right;*/
+    right:75px;
+}
+
+.seekjob
+{
+    background-color: yellow;
+    color:black;
+    text-align: center;
+    border-radius: 5px;
+    border: 5px solid yellow;
+    border-width: 15px;
+    text-decoration: none;
+}
+
+#nejtak img
+{   
+    grid-column: 1;
+    grid-row: 1;
+    width:100%;
+}
+
+#nejtak article h2
+{
+    color:white;
+    margin-top: 0;
+}
+
+#nejtak article
+{
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#nejtak
+{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    height: 482px;
+    grid-template-columns: 100%;
+}
+
+footer
+{
+    background-color: #333333;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin-right: 25px;
+    color:white;
+}
+
+footer h3
+{
+    color:#7ac144;
+}
+
+footer h2
+{
+    color:white;
+}
+
+.alittlebitofmargin
+{
+    /*margin-bottom: 25px;*/
+    border-right-width: 0;
+}
+
+.sammeting
+{
+    border: 25px solid #7ac144;
+}
+
+#butdiff
+{
+    border: 25px solid white;
+}
